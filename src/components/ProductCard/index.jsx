@@ -6,17 +6,16 @@ function ProductCard({ data }) {
       <a href="#!">
         <img
           className="rounded-t-lg"
-          src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+          src={data.image}
           alt=""
         />
       </a>
       <div className="p-6">
         <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          {data.name}
+          {data.title}
         </h5>
         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-          Some quick example text to build on the card title and make up the
-          bulk of the card&apos;s content.
+          {data.description}
         </p>
         <button
           type="button"
